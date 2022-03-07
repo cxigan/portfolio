@@ -163,13 +163,12 @@ title {
 .subtitle {
   display: flex;
   margin-right: 32px;
-  
 }
 
 .work__date {
   position: relative;
-  height: 42px;
-  width: 55px;
+  height: 30px;
+  width: 50px;
   background-color: #142850;
-  border-radius: 60%;
+  border-radius: 40px;
 }
