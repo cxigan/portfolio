@@ -115,6 +115,11 @@ h3 {
   line-height: 136%;
 }
 
+.about {
+  padding-bottom: 69px;
+  padding-top: 95px;
+}
+
 .about__container {
   display: flex;
   margin: 0 auto;
@@ -141,9 +146,25 @@ h3 {
   object-fit: cover;
 }
 
+.button {
+  border-style: none;
+  background-color: rgb(112, 109, 67);
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  border-radius: 6px;
+  padding: 17px 20px;
+}
+
 .recent-posts {
   background-color: #edf7fa;
   padding: 27px 0px 32px;
+}
+
+.featured{
+padding:35px 0px 63px ;
 }
 
 @media (max-width: 480px) {
@@ -161,15 +182,32 @@ h3 {
   }
 }
 
+.section-title{
+  font-size: 400;
+  font-size: 22px;
+}
+
 .recent-posts__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 22px;
 }
+
+.recent-posts__title{
+  color: #00A8CC;
+  
+}
+
 .recent-posts__articles {
   display: flex;
 }
+
+.recent-posts__info{
+  padding-bottom: 17px;
+}
+
+
 .recent-posts__article {
   background-color: #ffffff;
   box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
@@ -178,6 +216,13 @@ h3 {
   margin-right: 2%;
   padding: 24px 21px 28px 23px;
 }
+
+.recent-posts__subtitle {
+  font-size: 26px;
+  line-height: 38px;
+  padding-bottom: 23px;
+}
+
 .recent-posts__article:last-child {
   margin-right: 0;
 }
@@ -225,6 +270,7 @@ h3 {
   height: 180px;
   overflow: hidden;
   border-radius: 6px;
+  flex-shrink: 0;
 }
 
 .work__img {
@@ -246,6 +292,8 @@ h3 {
   display: flex;
   margin-right: 32px;
   align-items: center;
+  padding: 15px 0px 15px;
+  
 }
 
 .work__date {
@@ -258,18 +306,24 @@ h3 {
   padding: 1px 10px;
 }
 
+.work__category{
+  color: #8695A4;
+  
+}
+
 @media (max-width: 480px) {
   .fetured__works {
     display: flex;
     overflow: auto;
-    
   }
-  .work{
+  .work {
     padding: 0px 0px 20px;
     flex-direction: column;
-    max-width: 100%;
+    max-width: 339px;
     flex-shrink: 0;
+    margin: 0px 13px;
   }
+
   .work__img-wrap {
     max-width: 100%;
     height: 230px;
