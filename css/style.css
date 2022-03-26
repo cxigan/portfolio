@@ -36,6 +36,13 @@ h3 {
 .wrapper {
   min-height: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.main{
+  flex: 1 1 auto;
 }
 
 .header {
@@ -163,8 +170,8 @@ h3 {
   padding: 27px 0px 32px;
 }
 
-.featured{
-padding:35px 0px 63px ;
+.featured {
+  padding: 35px 0px 63px;
 }
 
 @media (max-width: 480px) {
@@ -182,7 +189,7 @@ padding:35px 0px 63px ;
   }
 }
 
-.section-title{
+.section-title {
   font-size: 400;
   font-size: 22px;
 }
@@ -194,19 +201,17 @@ padding:35px 0px 63px ;
   margin-bottom: 22px;
 }
 
-.recent-posts__title{
-  color: #00A8CC;
-  
+.recent-posts__title {
+  color: #00a8cc;
 }
 
 .recent-posts__articles {
   display: flex;
 }
 
-.recent-posts__info{
+.recent-posts__info {
   padding-bottom: 17px;
 }
-
 
 .recent-posts__article {
   background-color: #ffffff;
@@ -293,7 +298,6 @@ padding:35px 0px 63px ;
   margin-right: 32px;
   align-items: center;
   padding: 15px 0px 15px;
-  
 }
 
 .work__date {
@@ -306,9 +310,8 @@ padding:35px 0px 63px ;
   padding: 1px 10px;
 }
 
-.work__category{
-  color: #8695A4;
-  
+.work__category {
+  color: #8695a4;
 }
 
 @media (max-width: 480px) {
@@ -332,35 +335,75 @@ padding:35px 0px 63px ;
   }
 }
 
+.blog__title{
+  color: #21243D ;
+
+}
+
+.blog__article{
+  margin-bottom: 55px;
+  
+}
+
+.blog__container{
+  margin-bottom: 55px;
+}
+
+.blog__subtitle{
+  
+  font-size: 30px;
+  color: #21243D;
+}
+
+.blog__info{
+  padding: 16px 0px 16px;
+  }
+
+.blog__info--grey{
+  color: #8695A4;
+}
+
+.blog__separator{
+  padding: 0px 20px 0px;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 51px 0px 54px ;
+}
+
 .social__list {
   display: flex;
 }
-
 .social__item {
-  height: 30px;
-  width: 30px;
   margin-right: 35px;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
 }
-
-.social__link {
+.social__item:last-child{
+  margin-right: 0;
+}
+.social__link{
   display: block;
-  font-size: 0;
   width: 100%;
   height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 0;
 }
-
-.social_fb {
-  background-image: url(fb.pdf);
-  background-position: center;
-  background-size: contain;
+.github{
+  background-image: url(../img/github.png);
 }
-.social_insta {
-  background-image: ;
+.vk{
+  background-image: url(../img/vk.png);
 }
-.social_twitter {
+.ok{
+  background-image: url(../img/ok.png);
 }
-.social_in {
+.telegram{
+  background-image: url(../img/telegram.png);
 }
